@@ -8,6 +8,10 @@ cmsRun python/HFLEDP5.py 337343 0 2000 10
 
 Run number 337343, 10 steps, 2000 events/step
 
+# october run
+- 346580 1000 led
+cmsRun python/HFLEDP5.py 346580 0 1000 1
+
 ## questions:
 - led datalarini nereden buluyoruz?
 - occupancy plot nedir?
