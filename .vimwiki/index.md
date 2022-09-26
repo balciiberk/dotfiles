@@ -1,3 +1,7 @@
 [cern](cern)
 [master](master)
 [tmp](tmp)
+[writing](writing)
+[kargo](kargo)
+[vi](vi)
+[bike](bike)

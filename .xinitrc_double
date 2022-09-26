@@ -54,4 +54,4 @@ export SSH_AUTH_SOCK
 clipmenud &
 picom &
 
-exec qtile start
+exec qtile start -c /home/berk/.config/qtile/double.py

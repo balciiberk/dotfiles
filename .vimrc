@@ -1,7 +1,7 @@
 call plug#begin('~/.vim/plugged')
 
 Plug 'vimwiki/vimwiki'                             " VimWiki
-Plug 'dense-analysis/ale'
+"Plug 'dense-analysis/ale'
 
 
 call plug#end()

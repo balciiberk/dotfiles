@@ -98,16 +98,12 @@ keys = [
     Key([], "XF86AudioLowerVolume", lazy.spawn("amixer sset Master 5%- unmute")),
     Key([], "XF86AudioRaiseVolume", lazy.spawn("amixer sset Master 5%+ unmute")),
 
-    #bluetooth
-    Key([mod], "F1", lazy.spawn("echo 'power on' | bluetoothctl")),
-    Key([mod], "F2", lazy.spawn("echo 'power off' | bluetoothctl")),
-
 
     Key([mod], "v", lazy.spawn("clipmenu")),
     Key([], "Print", lazy.spawn("maim ~/Pictures/screenshots/$(date '+%Y-%m-%d_%H-%M-%S').png", shell=True)),
     Key([mod], "Print", lazy.spawn("maim -s ~/Pictures/screenshots/$(date '+%Y-%m-%d_%H-%M-%S').png", shell=True)),
     Key(["shift"], "Print", lazy.spawn("maim -s --format png /dev/stdout | xclip -selection clipboard -t image/png -i", shell=True)),
-    Key([mod], 'b', lazy.next_screen(), desc='Next monitor'),
+    Key([mod], 'i', lazy.next_screen(), desc='Next monitor'),
 ]
 
 groups = [Group(i) for i in "123456789"]
@@ -175,8 +171,6 @@ screens = [
                 widget.Sep(),
                 widget.Backlight(format='bl:{percent:2.0%}',backlight_name='amdgpu_bl0'),
                 widget.Sep(),
-                widget.Bluetooth(hci='/dev_E0_67_81_5D_0A_CD'),
-                widget.Sep(),
                 widget.Battery(format = '{char} {percent:2.0%}'),
                 widget.Sep(),
                 widget.Clock(format='%a %d-%h-%Y %H:%M', foreground='ee9a00'),
@@ -189,10 +183,11 @@ screens = [
     Screen(
         top=bar.Bar(
             [
+                widget.Wallpaper(wallpaper='/usr/share/backgrounds/custom/pokemon.png', wallpaper_command=None, label=''),
                 widget.GroupBox(),
                 widget.WindowName(),
             ],
-            24,
+            14,
         ),
     ),
 ]
