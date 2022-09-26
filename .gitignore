@@ -58,7 +58,9 @@ thor/
 .steam/
 .steampath
 .steampid
-.config/Unknown Organization/zoom .conf
+.config/Unknown Organization
 .config/d-feet/
 .config/vlc/
 .config/whatscli/
+.config/zoomus.conf
+.pulse-cookie
