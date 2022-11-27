@@ -67,3 +67,7 @@ thor/
 Games/
 dev/
 .This War of Mine/
+.config/DjVuLibre/
+.config/cef_user_data/
+.config/heroic/
+.config/legendary/
