@@ -1,0 +1,34 @@
+(18:15:17) INFO:    [Legendary]:       Running command: /opt/Heroic/resources/app.asar.unpacked/build/bin/linux/legendary --version
+(18:15:17) INFO:    [Legendary]:       Legendary location: /opt/Heroic/resources/app.asar.unpacked/build/bin/linux/legendary
+(18:15:17) INFO:    [Gog]:             GOGDL location: /opt/Heroic/resources/app.asar.unpacked/build/bin/linux/gogdl
+(18:15:17) INFO:    [Backend]:         
+
+Heroic Version: 2.4.3 Chopper
+Legendary Version:  0.20.28 Dark Energy (hotfix #2)
+OS: Arch KERNEL: 6.0.6-arch1-1 ARCH: x64
+CPU: AMD Ryzen 7 5700U with Radeon Graphics @1.8 GOVERNOR: schedutil
+RAM: Total: 14.98 GiB Available: 13.15 GiB
+GRAPHICS: GPU0: Lucienne VRAM: 512MB DRIVER:  
+PROTOCOL: tty
+
+(18:15:17) ERROR:   [Backend]:         Error: write EPIPE
+(18:15:17) WARNING: [Backend]:         Protocol already registered.
+(18:15:18) INFO:    [Backend]:         AreWeAntiCheatYet data downloaded
+(18:15:18) ERROR:   [Backend]:         Error: write EPIPE
+(18:15:18) INFO:    [Backend]:         Checking for new Heroic Updates
+(18:15:18) ERROR:   [Backend]:         Error: write EPIPE
+(18:15:18) INFO:    [Frontend]:        Refreshing Library
+(18:15:18) ERROR:   [Backend]:         Error: write EPIPE
+(18:15:18) INFO:    [Legendary]:       Refreshing library...
+(18:15:18) ERROR:   [Backend]:         Error: write EPIPE
+(18:15:18) INFO:    [Legendary]:       Refreshing Epic Games...
+(18:15:18) ERROR:   [Backend]:         Error: write EPIPE
+(18:15:19) INFO:    [Legendary]:       Running command: /opt/Heroic/resources/app.asar.unpacked/build/bin/linux/legendary list
+(18:15:19) ERROR:   [Backend]:         Error: write EPIPE
+(18:15:20) INFO:    [DXVKInstaller]:   Updating vkd3d to: vkd3d-proton-2.7.tar.xz
+(18:15:20) ERROR:   [Backend]:         Error: write EPIPE
+(18:15:20) INFO:    [Backend]:         Downloaded Winetricks
+(18:15:20) ERROR:   [Backend]:         Error: write EPIPE
+(18:15:21) INFO:    [Legendary]:       Updating game list
+(18:15:21) INFO:    [Legendary]:       Game List Updated
+(18:15:21) ERROR:   [Backend]:         Error: write EPIPE

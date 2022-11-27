@@ -1,0 +1,135 @@
+System Info:
+Heroic Version: 2.4.3 Chopper
+Legendary Version:  0.20.28 Dark Energy (hotfix #2)
+OS: Arch KERNEL: 6.0.7-arch1-1 ARCH: x64
+CPU: AMD Ryzen 7 5700U with Radeon Graphics @1.8 GOVERNOR: schedutil
+RAM: Total: 14.98 GiB Available: 11.62 GiB
+GRAPHICS: GPU0: Lucienne VRAM: 512MB DRIVER:  
+PROTOCOL: tty
+
+Game Settings: {
+	"autoInstallDxvk": false,
+	"autoInstallVkd3d": false,
+	"preferSystemLibs": false,
+	"maxSharpness": 2,
+	"language": "",
+	"nvidiaPrime": false,
+	"enviromentOptions": [],
+	"wrapperOptions": [],
+	"savesPath": "",
+	"showFps": false,
+	"targetExe": "",
+	"useGameMode": false,
+	"winePrefix": "/home/berk/Games/Heroic/Prefixes/rocketleague",
+	"wineVersion": {
+		"bin": "/home/berk/.local/share/Steam/steamapps/common/Proton 7.0/proton",
+		"name": "Proton - Proton 7.0",
+		"type": "proton"
+	},
+	"eacRuntime": false,
+	"battlEyeRuntime": false,
+	"gogSaves": []
+}
+
+Game launched at: Fri Nov 11 2022 20:03:28 GMT+0300 (GMT+03:00)
+
+Launch Command: LD_PRELOAD= STEAM_COMPAT_CLIENT_INSTALL_PATH=/home/berk/.steam/steam STEAM_COMPAT_DATA_PATH=/home/berk/Games/Heroic/Prefixes/rocketleague PROTON_NO_ESYNC=1 PROTON_NO_FSYNC=1 STEAM_COMPAT_APP_ID=0 SteamAppId=0 SteamGameId=heroic-rocketleague PROTON_LOG_DIR=/home/berk /opt/Heroic/resources/app.asar.unpacked/build/bin/linux/legendary launch Sugar --language en  --no-wine --wrapper "'/home/berk/.local/share/Steam/steamapps/common/Proton 7.0/proton' run"
+
+Game Log:
+[cli] INFO: Logging in...
+[Core] INFO: Trying to re-use existing login session...
+[cli] INFO: Checking for updates...
+[Core] INFO: Getting authentication token...
+[cli] INFO: Launching Sugar...
+
+Legendary update available!
+- New version: 0.20.31 - "Dark Energy (hotfix #5)"
+- Release summary:
+ [!] Fixed cloud-syncing accidentally deleting game or save data in some cases
+ [*] Updated API URL for Uplay activiation
+See full changelog for additional details.
+- Release URL: https://legendary.gl/release/0.20.31
+! This update is recommended as it fixes major issues.
+
+- Download URL: https://legendary.gl/release/download/0.20.31/legendary
+wineserver: using server-side synchronization.
+wine: RLIMIT_NICE is <= 20, unable to use setpriority safely
+[S_API] SteamAPI_Init(): SteamAPI_IsSteamRunning() did not locate a running instance of Steam.
+[S_API FAIL] SteamAPI_Init() failed
+wine: Read access denied for device L"\\??\\Z:\\", FS volume label and serial are not available.
+wine: Read access denied for device L"\\??\\Z:\\", FS volume label and serial are not available.
+wine: Read access denied for device L"\\??\\Z:\\", FS volume label and serial are not available.
+*** WARNING - PATHS MAY NOT BE VALID ***
+Warning, Material TutorialFX.Materials.TextGlow_MAT missing bUsedWithStaticLighting=True!
+WebRequest_X_15 type: HTTPError, message: 
+ScriptWarning, Something went wrong uploading save data 574d4ee1b47744b486ba240df9fc0e52 RLSaveData
+	EOSOnlineStorageUploader_TA Transient.SaveData_TA_1:EOSOnlineStorageUploader_TA_0
+	Function TAGame.EOSOnlineStorageUploader_TA:UploadSaveData:07A8
+Script call stack:
+	Function TAGame.__StatusTriggerManager_TA__RegisterTriggers_0x1:__StatusTriggerManager_TA__RegisterTriggers_0x1
+	Function TAGame.StatusTriggerManager_TA:CheckModifiedCondition
+	Function TAGame.__CrumbTrails_TA__SetupCompletionCondition_0x1:__CrumbTrails_TA__SetupCompletionCondition_0x1
+	Function TAGame.CrumbTrails_TA:HandleTrailComplete
+	Function TAGame.CrumbTrailSave_TA:CompleteTrail
+	Function TAGame.SaveObject_TA:SetDirty
+	Function TAGame.SaveData_TA:HandleSaveObjectDirty
+	Function TAGame.SaveData_TA:SetOnlineDirty
+	Function TAGame.EOSOnlineStorageUploader_TA:UploadSaveData
+
+ScriptWarning, Something went wrong uploading save data 574d4ee1b47744b486ba240df9fc0e52 RLSaveData
+	EOSOnlineStorageUploader_TA Transient.SaveData_TA_1:EOSOnlineStorageUploader_TA_0
+	Function TAGame.EOSOnlineStorageUploader_TA:UploadSaveData:07A8
+Script call stack:
+	Function TAGame.__StatusTriggerManager_TA__RegisterTriggers_0x1:__StatusTriggerManager_TA__RegisterTriggers_0x1
+	Function TAGame.StatusTriggerManager_TA:CheckModifiedCondition
+	Function TAGame.__CrumbTrails_TA__SetupCompletionCondition_0x1:__CrumbTrails_TA__SetupCompletionCondition_0x1
+	Function TAGame.CrumbTrails_TA:HandleTrailComplete
+	Function TAGame.CrumbTrailSave_TA:CompleteTrail
+	Function TAGame.SaveObject_TA:SetDirty
+	Function TAGame.SaveData_TA:HandleSaveObjectDirty
+	Function TAGame.SaveData_TA:SetOnlineDirty
+	Function TAGame.EOSOnlineStorageUploader_TA:UploadSaveData
+
+ScriptWarning, Something went wrong uploading save data 574d4ee1b47744b486ba240df9fc0e52 RLSaveData
+	EOSOnlineStorageUploader_TA Transient.SaveData_TA_1:EOSOnlineStorageUploader_TA_0
+	Function TAGame.EOSOnlineStorageUploader_TA:UploadSaveData:07A8
+Script call stack:
+	Function TAGame.__StatusTriggerManager_TA__RegisterTriggers_0x1:__StatusTriggerManager_TA__RegisterTriggers_0x1
+	Function TAGame.StatusTriggerManager_TA:CheckModifiedCondition
+	Function TAGame.__CrumbTrails_TA__SetupActivationCondition_0x1:__CrumbTrails_TA__SetupActivationCondition_0x2
+	Function TAGame.CrumbTrails_TA:ActivateTrail
+	Function TAGame.CrumbTrailSave_TA:SetTrailActive
+	Function TAGame.SaveObject_TA:SetDirty
+	Function TAGame.SaveData_TA:HandleSaveObjectDirty
+	Function TAGame.SaveData_TA:SetOnlineDirty
+	Function TAGame.EOSOnlineStorageUploader_TA:UploadSaveData
+
+ScriptWarning, Something went wrong uploading save data 574d4ee1b47744b486ba240df9fc0e52 RLSaveData
+	EOSOnlineStorageUploader_TA Transient.SaveData_TA_1:EOSOnlineStorageUploader_TA_0
+	Function TAGame.EOSOnlineStorageUploader_TA:UploadSaveData:07A8
+Script call stack:
+	Function TAGame.__StatusTriggerManager_TA__RegisterTriggers_0x1:__StatusTriggerManager_TA__RegisterTriggers_0x1
+	Function TAGame.StatusTriggerManager_TA:CheckModifiedCondition
+	Function TAGame.__CrumbTrails_TA__SetupActivationCondition_0x1:__CrumbTrails_TA__SetupActivationCondition_0x2
+	Function TAGame.CrumbTrails_TA:ActivateTrail
+	Function TAGame.CrumbTrailSave_TA:SetTrailActive
+	Function TAGame.SaveObject_TA:SetDirty
+	Function TAGame.SaveData_TA:HandleSaveObjectDirty
+	Function TAGame.SaveData_TA:SetOnlineDirty
+	Function TAGame.EOSOnlineStorageUploader_TA:UploadSaveData
+
+FUniqueNetId::FromString - could not parse 'Bot_GentleGizmo'
+FUniqueNetId::FromString - could not parse 'Bot_SlightRocketeer'
+FUniqueNetId::FromString - could not parse 'Bot_NewGrog'
+Could not find package for asset title_generic_T_SF
+*** WARNING - PATHS MAY NOT BE VALID ***
+Warning, Material TutorialFX.Materials.TextGlow_MAT missing bUsedWithStaticLighting=True!
+FUniqueNetId::FromString - could not parse 'Bot_TwinEsper'
+FUniqueNetId::FromString - could not parse 'Bot_LimitedOctane'
+FUniqueNetId::FromString - could not parse 'Bot_AnyRocketeer'
+FUniqueNetId::FromString - could not parse 'Bot_AnyRocketeer'
+FUniqueNetId::FromString - could not parse 'Bot_TwinEsper'
+FUniqueNetId::FromString - could not parse 'Bot_Khan'
+FUniqueNetId::FromString - could not parse 'Bot_LimitedOctane'
+*** WARNING - PATHS MAY NOT BE VALID ***
+Warning, Material TutorialFX.Materials.TextGlow_MAT missing bUsedWithStaticLighting=True!

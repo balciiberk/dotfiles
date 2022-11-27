@@ -1,7 +1,13 @@
 [script_11](script_11)
 [script_12](script_12)
 [crab](crab)
+[sunum](sunum)
 13_TeV
+
+prof2-sample -o mcruns -n 50 -t crabConfig-13TeV.py -t crabConfig-7TeV.py -t Tune_13TeV_cfg.py -t Tune_7TeV_cfg.py generator.ranges
+prof2-sample -o mcruns -n 70 -t crabConfig-13TeV.py -t crabConfig-7TeV.py -t Tune_13TeV_cfg.py -t Tune_7TeV_cfg.py generator.ranges
+
+prof2-tune -d data/ ipol.dat -r mcruns --wfile=weights.txt
 
 
 #7 TeV

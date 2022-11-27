@@ -1,0 +1,39 @@
+(19:54:58) INFO:    [Legendary]:       Running command: /opt/Heroic/resources/app.asar.unpacked/build/bin/linux/legendary --version
+(19:54:59) INFO:    [Legendary]:       Legendary location: /opt/Heroic/resources/app.asar.unpacked/build/bin/linux/legendary
+(19:54:59) INFO:    [Gog]:             GOGDL location: /opt/Heroic/resources/app.asar.unpacked/build/bin/linux/gogdl
+(19:54:59) INFO:    [Backend]:         
+
+Heroic Version: 2.4.3 Chopper
+Legendary Version:  0.20.28 Dark Energy (hotfix #2)
+OS: Arch KERNEL: 6.0.7-arch1-1 ARCH: x64
+CPU: AMD Ryzen 7 5700U with Radeon Graphics @1.8 GOVERNOR: schedutil
+RAM: Total: 14.98 GiB Available: 13.93 GiB
+GRAPHICS: GPU0: Lucienne VRAM: 512MB DRIVER:  
+PROTOCOL: tty
+
+(19:54:59) ERROR:   [Backend]:         Error: write EPIPE
+(19:54:59) WARNING: [Backend]:         Protocol already registered.
+(19:54:59) INFO:    [Backend]:         AreWeAntiCheatYet data downloaded
+(19:54:59) ERROR:   [Backend]:         Error: write EPIPE
+(19:54:59) INFO:    [Backend]:         Checking for new Heroic Updates
+(19:54:59) ERROR:   [Backend]:         Error: write EPIPE
+(19:54:59) INFO:    [Frontend]:        Refreshing Library
+(19:54:59) ERROR:   [Backend]:         Error: write EPIPE
+(19:54:59) INFO:    [Legendary]:       Refreshing library...
+(19:54:59) ERROR:   [Backend]:         Error: write EPIPE
+(19:54:59) INFO:    [Legendary]:       Refreshing Epic Games...
+(19:54:59) ERROR:   [Backend]:         Error: write EPIPE
+(19:55:00) INFO:    [Legendary]:       Running command: /opt/Heroic/resources/app.asar.unpacked/build/bin/linux/legendary list
+(19:55:00) ERROR:   [Backend]:         Error: write EPIPE
+(19:55:02) INFO:    [DXVKInstaller]:   Updating vkd3d to: vkd3d-proton-2.7.tar.xz
+(19:55:02) ERROR:   [Backend]:         Error: write EPIPE
+(19:55:02) INFO:    [DXVKInstaller]:   Updating dxvk to: dxvk-2.0
+(19:55:02) ERROR:   [Backend]:         Error: write EPIPE
+(19:55:03) INFO:    [Legendary]:       Updating game list
+(19:55:03) INFO:    [Legendary]:       Game List Updated
+(19:55:03) ERROR:   [Backend]:         Error: write EPIPE
+(19:55:04) INFO:    [Backend]:         Downloaded Winetricks
+(19:55:04) ERROR:   [Backend]:         Error: write EPIPE
+(19:55:05) INFO:    [Legendary]:       Checking for game updates.
+(19:55:05) INFO:    [Legendary]:       Running command: /opt/Heroic/resources/app.asar.unpacked/build/bin/linux/legendary list-installed --check-updates --tsv
+(19:55:05) ERROR:   [Backend]:         Error: write EPIPE

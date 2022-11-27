@@ -155,7 +155,8 @@ screens = [
     Screen(
         top=bar.Bar(
             [
-                widget.Wallpaper(wallpaper='/usr/share/backgrounds/custom/pokemon.png', wallpaper_command=None, label=''),
+                widget.Wallpaper(wallpaper='/usr/share/backgrounds/custom/voyage_to_cythera.png', wallpaper_command=None, label=''),
+                #widget.Wallpaper(wallpaper='/usr/share/backgrounds/custom/pokemon.png', wallpaper_command=None, label=''),
                 #widget.CurrentLayout(),
                 widget.GroupBox(),
                 #widget.Prompt(),
