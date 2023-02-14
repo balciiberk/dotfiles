@@ -5,3 +5,5 @@ if status is-interactive
     bind Y fish_clipboard_copy
     # Commands to run in interactive sessions can go here
 end
+
+kubectl completion fish | source
