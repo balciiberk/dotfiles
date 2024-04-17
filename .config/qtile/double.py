@@ -87,6 +87,7 @@ keys = [
         desc="Spawn a command using a prompt widget"),
     Key([mod], 'p', lazy.run_extension(extension.DmenuRun())),
     Key([mod], 'f', lazy.spawn("firefox")),
+    Key([mod], 'o', lazy.spawn("passmenu")),
 
 
     #media keys
@@ -151,7 +152,7 @@ screens = [
     Screen(
         top=bar.Bar(
             [
-                widget.Wallpaper(wallpaper='/usr/share/backgrounds/custom/pokemon.png', wallpaper_command=None, label=''),
+                widget.Wallpaper(wallpaper='/usr/share/backgrounds/custom/voyage_to_cythera.png', wallpaper_command=None, label=''),
                 #widget.CurrentLayout(),
                 widget.GroupBox(),
                 #widget.Prompt(),
@@ -169,7 +170,7 @@ screens = [
                 widget.TextBox("vol:"),
                 widget.Volume(),
                 widget.Sep(),
-                widget.Backlight(format='bl:{percent:2.0%}',backlight_name='amdgpu_bl0'),
+                widget.Backlight(format='bl:{percent:2.0%}',backlight_name='intel_backlight'),
                 widget.Sep(),
                 widget.Battery(format = '{char} {percent:2.0%}'),
                 widget.Sep(),
@@ -183,7 +184,7 @@ screens = [
     Screen(
         top=bar.Bar(
             [
-                widget.Wallpaper(wallpaper='/usr/share/backgrounds/custom/voyage_to_cythera.png', wallpaper_command=None, label=''),
+                widget.Wallpaper(wallpaper='/usr/share/backgrounds/custom/pokemon.png', wallpaper_command=None, label=''),
                 widget.GroupBox(),
                 widget.WindowName(),
             ],

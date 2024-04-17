@@ -1,0 +1,21 @@
+live_config_reload = true
+
+[cursor]
+unfocused_hollow = true
+vi_mode_style = "Block"
+
+[env]
+TERM = "xterm-256color"
+
+[font]
+size = 9
+
+[font.normal]
+family = "SF Mono"
+
+[scrolling]
+history = 100000
+
+[selection]
+save_to_clipboard = true
+semantic_escape_chars = ",│`|:\"' ()[]{}<>\t"

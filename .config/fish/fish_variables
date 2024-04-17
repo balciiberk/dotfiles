@@ -1,5 +1,15 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
+SETUVAR --export KUBECONFIG:/home/berk/config
+SETUVAR --export OS_AUTH_URL:https\x3a//keystone\x2ecern\x2ech/v3
+SETUVAR --export OS_IDENTITY_API_VERSION:3
+SETUVAR --export OS_INTERFACE:public
+SETUVAR --export OS_PASSWORD:\x2dNotbooK/2\x5d
+SETUVAR --export OS_PROJECT_ID:96b97713\x2d9601\x2d4112\x2d9e37\x2d8f799f865c3c
+SETUVAR --export OS_PROJECT_NAME:wlcg\x2diam
+SETUVAR --export OS_REGION_NAME:cern
+SETUVAR --export OS_USERNAME:bbalci
+SETUVAR --export OS_USER_DOMAIN_NAME:Default
 SETUVAR __fish_initialized:3400
 SETUVAR fish_color_autosuggestion:555\x1ebrblack
 SETUVAR fish_color_cancel:\x2dr

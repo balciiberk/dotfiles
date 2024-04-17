@@ -24,17 +24,14 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-import subprocess
 from typing import List  # noqa: F401
 
-from libqtile import bar, layout, widget, hook
+from libqtile import bar, layout, widget
 from libqtile.config import Click, Drag, Group, Key, Match, Screen
 from libqtile.lazy import lazy
 from libqtile.utils import guess_terminal
 from libqtile import extension
-#from libqtile.log_utils import logger
 
-import traverse
 
 mod = "mod4"
 terminal = guess_terminal()
@@ -44,14 +41,10 @@ keys = [
     # at https://docs.qtile.org/en/latest/manual/config/lazy.html
 
     # Switch between windows
-    #Key([mod], "h", lazy.layout.left(), desc="Move focus to left"),
-    #Key([mod], "l", lazy.layout.right(), desc="Move focus to right"),
-    #Key([mod], "j", lazy.layout.down(), desc="Move focus down"),
-    #Key([mod], "k", lazy.layout.up(), desc="Move focus up"),
-    Key([mod], 'k', lazy.function(traverse.up)),
-    Key([mod], 'j', lazy.function(traverse.down)),
-    Key([mod], 'h', lazy.function(traverse.left)),
-    Key([mod], 'l', lazy.function(traverse.right)),
+    Key([mod], "h", lazy.layout.left(), desc="Move focus to left"),
+    Key([mod], "l", lazy.layout.right(), desc="Move focus to right"),
+    Key([mod], "j", lazy.layout.down(), desc="Move focus down"),
+    Key([mod], "k", lazy.layout.up(), desc="Move focus up"),
     Key([mod], "Tab", lazy.layout.next(),
         desc="Move window focus to other window"),
 
@@ -164,7 +157,7 @@ screens = [
     Screen(
         top=bar.Bar(
             [
-                #widget.Wallpaper(wallpaper='/usr/share/backgrounds/custom/voyage_to_cythera.png', label=''),
+                widget.Wallpaper(wallpaper='/usr/share/backgrounds/custom/voyage_to_cythera.png', wallpaper_command=None, label=''),
                 #widget.CurrentLayout(),
                 widget.GroupBox(),
                 #widget.Prompt(),
@@ -192,14 +185,11 @@ screens = [
             # border_width=[2, 0, 2, 0],  # Draw top and bottom borders
             # border_color=["ff00ff", "000000", "ff00ff", "000000"]  # Borders are magenta
         ),
-        wallpaper='/usr/share/backgrounds/custom/voyage_to_cythera.png',
-        wallpaper_mode='fill',
     ),
     Screen(
         top=bar.Bar(
             [
-                #widget.Wallpaper(wallpaper='/usr/share/backgrounds/custom/pokemon.png', wallpaper_command=None, label=''),
-                #widget.Wallpaper(wallpaper='/usr/share/backgrounds/custom/pokemon.png', label=''),
+                widget.Wallpaper(wallpaper='/usr/share/backgrounds/custom/pokemon.png', wallpaper_command=None, label=''),
                 widget.GroupBox(),
                 widget.WindowName(),
                 widget.Sep(),
@@ -217,32 +207,14 @@ screens = [
             ],
             24,
         ),
-        wallpaper='/usr/share/backgrounds/custom/pokemon.png',
-        wallpaper_mode='fill',
     ),
     Screen(
         top=bar.Bar(
             [
-                #widget.Wallpaper(wallpaper='/usr/share/backgrounds/custom/totoro2.png', label='ola'),
-                widget.GroupBox(),
-                widget.WindowName(),
-                widget.Sep(),
-                widget.CPU(format='CPU:{load_percent}% '),
-                widget.Memory(format='Mem:{MemPercent}% Swap:{SwapPercent}%'),
-                widget.Sep(),
-                widget.TextBox("vol:"),
-                widget.Volume(),
-                widget.Sep(),
-                widget.Backlight(format='bl:{percent:2.0%}',backlight_name='intel_backlight'),
-                widget.Sep(),
-                widget.Battery(format = '{char} {percent:2.0%}'),
-                widget.Sep(),
-                widget.Clock(format='%a %d-%h-%Y %H:%M', foreground='ee9a00'),
+                widget.Wallpaper(wallpaper='/usr/share/backgrounds/custom/totoro2.png', wallpaper_command=None, label=''),
             ],
-            24,
+            1,
         ),
-        wallpaper='/usr/share/backgrounds/custom/totoro2.png',
-        wallpaper_mode='fill',
     ),
 ]
 
@@ -288,13 +260,3 @@ auto_minimize = True
 # We choose LG3D to maximize irony: it is a 3D non-reparenting WM written in
 # java that happens to be on java's whitelist.
 wmname = "LG3D"
-
-@hook.subscribe.startup
-def autostart():
-    randr = os.path.expanduser('~/.config/qtile/autostart.sh')
-    subprocess.call([randr])
-
-@hook.subscribe.screens_reconfigured
-def screen_reconf():
-    randr = os.path.expanduser('~/.config/qtile/autostart.sh')
-    subprocess.call([randr])

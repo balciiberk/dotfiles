@@ -30,6 +30,6 @@ alias LX8='ssh -Y bbalci@lxplus8.cern.ch'
 alias LX9='ssh -Y bbalci@lxplus9.cern.ch'
 alias 904='ssh -Y bbalci@cms904usr'
 
-#test
-export PATH=$PATH:/home/berk/bin
+
+
 exec fish
